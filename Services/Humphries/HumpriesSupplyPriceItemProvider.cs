@@ -12,7 +12,7 @@ namespace buildxact_supplies.Services.Humphries
 {
     class HumpriesSupplyPriceItemProvider : ISupplyPriceItemProvider
     {
-        private HumpriesCsvReader _reader;
+        private readonly HumpriesCsvReader _reader;
 
         public HumpriesSupplyPriceItemProvider(HumpriesCsvReader reader)
         {

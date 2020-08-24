@@ -10,7 +10,11 @@ Hi, I thought I'd keep some notes here.
 6. Created first cut, Humpries implementation of supplypriceitemprovider
 7. Created first integration test
 8. First checkin
-9. eep, tests fail.
+9. eep, tests fail, fix tests.
+10. second checkin.
+11. Make program, quick test run.
+
+
 
 ### Structure
 I wasn't really sure what directory structure would make the most sense here, there are lots of patterns that I coud have relied on.  
