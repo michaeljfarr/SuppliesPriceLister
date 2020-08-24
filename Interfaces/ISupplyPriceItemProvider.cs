@@ -11,6 +11,7 @@ namespace buildxact_supplies.Interfaces
 {
     public interface ISupplyPriceItemProvider
     {
+        public Currency Currency { get; }
         /// <summary>
         /// This should parse the file from the provided file and return the list of items as requested.
         /// </summary>

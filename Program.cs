@@ -39,15 +39,11 @@ namespace SuppliesPriceLister
             {
                 itemProvider = serviceProvider.GetRequiredService<MegacorpSupplyPriceItemProvider>();
             }
-
+            var writer = serviceProvider.GetRequiredService<SuppliesPriceListWriter>();
+            
             using (var fileStream = File.OpenRead(args[1]))
             {
-                var items = await itemProvider.GetItemsFromFile(fileStream);
-                foreach (var item in items)
-                {
-                    //example output 7f3c48c4-f8b6-453f-b2fa-83ec31dfa85c, Bobcat to Dig LM of Strip Footing, $800.00
-                    Console.WriteLine($"{item.Id}, {item.ItemName}, {item.Price}");
-                }
+                await writer.WriteSuppliesList(itemProvider, Console.Out, fileStream);
             }
 
             return 0;

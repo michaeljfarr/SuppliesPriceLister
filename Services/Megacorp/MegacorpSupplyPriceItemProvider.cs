@@ -18,6 +18,11 @@ namespace buildxact_supplies.Services.Humphries
             _reader = reader;
         }
 
+        /// <summary>
+        ///  All price sources are in USD
+        /// </summary>
+        public Currency Currency => Currency.USD;
+
         public async Task<IOrderedEnumerable<SupplyPriceItem>> GetItemsFromFile(Stream fileStream)
         {
             var productInfoEnumerable = await _reader.ReadFileStream(fileStream);

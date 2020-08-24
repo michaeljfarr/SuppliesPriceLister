@@ -20,6 +20,11 @@ namespace buildxact_supplies.Services.Humphries
         }
 
         /// <summary>
+        ///  All price sources are in AUD
+        /// </summary>
+        public Currency Currency => Currency.AUD;
+
+        /// <summary>
         /// Read the data stream as a HumpriesProductStream and convert it to 
         /// </summary>
         /// <param name="fileStream"></param>
