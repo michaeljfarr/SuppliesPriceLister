@@ -17,7 +17,7 @@ namespace SuppliesPriceLister
     {
         static async Task<int> Main(string[] args)
         {
-            if (args.Length != 2 || args[0] != FormatNames.Humpries && args[0] != FormatNames.Humpries)
+            if (args.Length != 2 || args[0] != FormatNames.Humpries && args[0] != FormatNames.Megacorp)
             {
                 Console.WriteLine("Usage: SPL <Format> <pathToFile>");
                 Console.WriteLine($" Formats: {FormatNames.Humpries}, {FormatNames.Megacorp}");

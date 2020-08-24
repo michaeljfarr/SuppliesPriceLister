@@ -2,7 +2,7 @@
   "profiles": {
     "SuppliesPriceLister": {
       "commandName": "Project",
-      "commandLineArgs": "Humpries C:\\Users\\Micha\\source\\repos\\BuildXact\\buildxact-at-home-coding-challenge\\humphries.csv"
+      "commandLineArgs": "Megacorp C:\\Users\\Micha\\source\\repos\\BuildXact\\buildxact-at-home-coding-challenge\\megacorp.json"
     }
   }
 }

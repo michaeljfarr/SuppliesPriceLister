@@ -23,7 +23,7 @@ namespace buildxact_supplies.Services
 
         public decimal UsdToAud(decimal usd)
         {
-            return usd * _options.CurrentValue.audUsdExchangeRate;
+            return usd * 0.7m;//todo:fix configure line: _options.CurrentValue.audUsdExchangeRate;
         }
     }
 }
