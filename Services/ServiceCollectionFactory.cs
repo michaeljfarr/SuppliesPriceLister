@@ -28,7 +28,7 @@ namespace buildxact_supplies.Services
 
             serviceCollection.AddSingleton<SuppliesPriceListWriter>();
             serviceCollection.AddSingleton<CurrencyConverter>();
-            serviceCollection.Configure<PriceListerOptions>(configuration.GetSection(""));
+            serviceCollection.Configure<PriceListerOptions>(configuration);
 
             
             return serviceCollection;

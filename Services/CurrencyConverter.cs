@@ -1,4 +1,5 @@
-﻿using buildxact_supplies.Model;
+﻿using System;
+using buildxact_supplies.Model;
 using Microsoft.Extensions.Options;
 
 namespace buildxact_supplies.Services
@@ -10,6 +11,10 @@ namespace buildxact_supplies.Services
         public CurrencyConverter(IOptionsMonitor<PriceListerOptions> options)
         {
             _options = options;
+            if (_options.CurrentValue.audUsdExchangeRate <= 0)
+            {
+                throw new ArgumentException($"Config Error: audUsdExchangeRate was {_options.CurrentValue.audUsdExchangeRate}" );
+            }
         }
 
         /// <summary>
@@ -23,7 +28,7 @@ namespace buildxact_supplies.Services
 
         public decimal UsdToAud(decimal usd)
         {
-            return usd * 0.7m;//todo:fix configure line: _options.CurrentValue.audUsdExchangeRate;
+            return usd * _options.CurrentValue.audUsdExchangeRate;
         }
     }
 }
