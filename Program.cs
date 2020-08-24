@@ -1,4 +1,8 @@
-﻿using System;
+﻿
+using System;
+using System.Runtime.CompilerServices;
+
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("SuppliesPriceLister.Tests")]
 
 namespace SuppliesPriceLister
 {
