@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SuppliesPriceLister": {
+      "commandName": "Project",
+      "commandLineArgs": "Megacorp C:\\Users\\Micha\\source\\repos\\BuildXact\\buildxact-at-home-coding-challenge\\SuppliesPriceLister\\megacorp.json"
+    }
+  }
+}
