@@ -31,6 +31,7 @@ namespace buildxact_supplies.Services.Humphries
                         //have detailed handling of error messages in production.
                         CostAUD = decimal.Parse(lineParts[3]),
                     };
+                    line = await streamReader.ReadLineAsync();
                 }
             }
         }

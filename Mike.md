@@ -9,8 +9,8 @@ Hi, I thought I'd keep some notes here.
 5. Create unit test project
 6. Created first cut, Humpries implementation of supplypriceitemprovider
 7. Created first integration test
-
-## Notes
+8. First checkin
+9. eep, tests fail.
 
 ### Structure
 I wasn't really sure what directory structure would make the most sense here, there are lots of patterns that I coud have relied on.  
